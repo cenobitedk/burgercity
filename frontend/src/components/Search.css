@@ -1,3 +1,10 @@
+.searchbox {
+  display: flex;
+  align-items: baseline;
+  place-content: center;
+  gap: 16px;
+}
+
 .searchbar {
   width: 100%;
   max-width: 330px;
