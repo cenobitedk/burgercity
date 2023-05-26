@@ -3,9 +3,15 @@
   max-width: 1024px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 0 2rem 5rem;
+  padding: 0 1rem 3rem;
   text-align: center;
   border-left: thin solid lightgrey;
   border-right: thin solid lightgrey;
   box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  #root {
+    padding: 0 2rem 5rem;
+  }
 }
