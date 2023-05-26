@@ -1,0 +1,14 @@
+[
+  {
+    "id": "e50068d789ba",
+    "name": "Joe's Texican Burger",
+    "description": "The Best Tex Burger In Town! This burger has been nominated and awarded for 3 years in a row by The Burger Committee with amazing reviews. You HAVE to taste this for yourself!",
+    "restaurantId": "94527a066a76"
+  },
+  {
+    "id": "a2b67add843f",
+    "name": "Cheese 'n' Twist",
+    "description": "A Classic and Good Ol' Cheeseburger with a Twist - Choose between a Sour dressing of Lemon and Pickled Onions, or our famous Curly Fries!",
+    "restaurantId": "619b22ae4cee"
+  }
+]

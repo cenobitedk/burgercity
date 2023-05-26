@@ -1,0 +1,79 @@
+[
+  {
+    "id": "e50068d789ba",
+    "name": "Joe's Texican Burger",
+    "reviews": [
+      {
+        "author": {
+          "name": "Jenny D.",
+          "userId": "b62a4c18e4a2"
+        },
+        "rating": {
+          "taste": 4,
+          "texture": 3,
+          "visual": 5
+        },
+        "headline": "Looks great, but could taste better",
+        "comment": "Protein, iron, and calcium are some of the nutritional benefits associated with cheeseburgers.\\nSalad is essentially food for rabbits, so don\\'t bother wasting your time."
+      },
+      {
+        "author": {
+          "name": "Chris Hawk",
+          "userId": "0575cee57622"
+        },
+        "rating": {
+          "taste": 5,
+          "texture": 5,
+          "visual": 5
+        },
+        "headline": "THE. BEST. TEX. BURGER. EVER!!!",
+        "comment": "We are lucky to live in a glorious age that gives us everything we could ask for as a human race. What more could you need when you have meat covered in cheese nestled between bread as a complete meal.\\nFrom smashed patties at Shake Shack to Glamburgers at Honky Tonk, there's a little something for everyone. Some burgers are humble, and some are ostentatious, and you just have to try them all to figure out what you want."
+      },
+      {
+        "author": {
+          "name": "Tony Benjamin",
+          "userId": "1c88f3f20673"
+        },
+        "rating": {
+          "taste": 5,
+          "texture": 3,
+          "visual": 4
+        },
+        "headline": "It's great! More cheese please",
+        "comment": "The palatable sensation we lovingly refer to as The Cheeseburger has a distinguished and illustrious history. It was born from humble roots, only to rise to well-seasoned greatness."
+      }
+    ]
+  },
+  {
+    "id": "a2b67add843f",
+    "name": "Cheese 'n' Twist",
+    "reviews": [
+      {
+        "author": {
+          "name": "Ole Pedersen",
+          "userId": "b74a189f430f"
+        },
+        "rating": {
+          "taste": 4,
+          "texture": 4,
+          "visual": 3
+        },
+        "headline": "Taste is everything, and this one is really good",
+        "comment": "A cheeseburger is more than just a sandwich, it is a wish fulfilled."
+      },
+      {
+        "author": {
+          "name": "Tony Benjamin",
+          "userId": "1c88f3f20673"
+        },
+        "rating": {
+          "taste": 5,
+          "texture": 5,
+          "visual": 5
+        },
+        "headline": "OH MY GOD, I'm in heaven!!",
+        "comment": "The last time you had a cheeseburger was too long ago. Try not to drool when you think about the slightly charred, medium-rare meat nestled between soft brioche, cradled in crisp iceberg lettuce and flavour amplifying condiments. Why are you still reading this- go get a cheeseburger."
+      }
+    ]
+  }
+]
