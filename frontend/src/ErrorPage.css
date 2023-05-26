@@ -1,3 +1,10 @@
+#error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+}
+
 .burger {
-    width: 300px;
+  width: 300px;
 }

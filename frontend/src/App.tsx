@@ -1,9 +1,12 @@
 import "./App.css";
+import Logo from "./components/Logo";
+import Search from "./components/Search";
 
 function App() {
   return (
     <>
-      <h1>BurgerCity</h1>
+      <Logo />
+      <Search />
     </>
   );
 }
