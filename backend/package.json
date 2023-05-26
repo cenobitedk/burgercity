@@ -2,11 +2,11 @@
   "name": "burgercity-backend",
   "version": "1.0.0",
   "description": "Backend gateway for BurgerCity",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./src/server.js"
   },
-  "author": "",
+  "author": "Jeppe Hasseriis, https://github.com/cenobitedk",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
