@@ -42,6 +42,10 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+main {
+  text-align: left;
+}
+
 button,
 input {
   border-radius: 8px;
