@@ -85,4 +85,14 @@ input:focus-visible {
 img {
   width: 100%;
   height: auto;
+  object-fit: cover;
+}
+
+.imgwrapper {
+  display: flex;
+}
+
+.imgwrapper[style] {
+  max-width: var(--width);
+  max-height: var(--height);
 }
