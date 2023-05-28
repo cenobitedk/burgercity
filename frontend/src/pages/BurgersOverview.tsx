@@ -3,7 +3,7 @@ import { Burger } from "../types/definitions";
 
 const Burger = (props: { burger: Burger }) => (
   <div>
-    <img src={`/burgers/${props.burger.id}.jpg`} width={300} />
+    <img src={`/burgers/${props.burger.id}.jpg`} />
     <h4>{props.burger.name}</h4>
     <p>{props.burger.description.slice(0, 128).concat("... read more")}</p>
   </div>

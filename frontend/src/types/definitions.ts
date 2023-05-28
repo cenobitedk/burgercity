@@ -30,3 +30,9 @@ export type Reviews = {
   name: string;
   reviews: Review[];
 };
+
+export type Restaurant = {
+  id: string;
+  name: string;
+  type: "diner" | "restaurant" | "cafe" | "cafeteria";
+};

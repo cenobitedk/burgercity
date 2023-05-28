@@ -62,6 +62,7 @@ export default function Burger() {
     <div>
       {burger && (
         <>
+          <img src={`/burgers/${burger.id}.jpg`} />
           <h2>{burger.name}</h2>
           <p>{burger.description}</p>
         </>

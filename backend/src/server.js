@@ -8,6 +8,7 @@ app.use(cors());
 // data
 const burgers = require("./data/burgers.json");
 const reviews = require("./data/reviews.json");
+const restaurants = require("./data/restaurants.json");
 
 app.get("/healthcheck", (req, res) => {
   res.send("OK");
@@ -44,6 +45,10 @@ app.get("/burgers/:id/reviews", (req, res) => {
   } else {
     res.send(204);
   }
+});
+
+app.get("/restaurants", (req, res) => {
+  res.json(restaurants);
 });
 
 app.listen(port, () => {

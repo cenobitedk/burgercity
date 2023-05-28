@@ -1,18 +1,22 @@
 [
   {
     "id": "94527a066a76",
-    "name": "Joe's all-day Burgers"
+    "name": "Joe's all-day Burgers",
+    "type": "restaurant"
   },
   {
     "id": "619b22ae4cee",
-    "name": "Route 66"
+    "name": "Route 66",
+    "type": "restaurant"
   },
   {
     "id": "d76da072d19b",
-    "name": "Four Stories"
+    "name": "Four Stories",
+    "type": "cafe"
   },
   {
     "id": "24ec7de4f911",
-    "name": "Al's Diner"
+    "name": "Al's Diner",
+    "type": "diner"
   }
 ]
