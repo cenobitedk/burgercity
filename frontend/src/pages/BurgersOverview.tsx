@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { Burger } from "../types/definitions";
 
 const Burger = (props: { burger: Burger }) => (
@@ -15,7 +15,9 @@ export default function BurgersOverview() {
     <ul>
       {burgers.map((burger, index) => (
         <li key={index}>
-          <Burger burger={burger} />
+          <Link to={`/burgers/${burger.id}`}>
+            <Burger burger={burger} />
+          </Link>
         </li>
       ))}
     </ul>
