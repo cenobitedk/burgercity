@@ -6,6 +6,46 @@ import { Burger, Review, Reviews } from "../types/definitions";
 
 import { Rating as StarRating } from "react-simple-star-rating";
 
+const AddReview = () => (
+  <>
+    <form>
+      <h4>Add review</h4>
+
+      <div className="add-review">
+        <div className="ratings">
+          Taste:
+          <StarRating size={20} />
+          <br />
+          Texture:
+          <StarRating size={20} />
+          <br />
+          Visual:
+          <StarRating size={20} />
+          <br />
+        </div>
+        <div className="input-values">
+          <label>
+            Name: <br />
+            <input type="text" />
+          </label>
+          <br />
+          <label>
+            Headline: <br />
+            <input type="text" />
+          </label>
+          <br />
+          <label>
+            Comment: <br />
+            <textarea rows={7}></textarea>
+          </label>
+          <br />
+        </div>
+      </div>
+      <button type="submit">Save</button>
+    </form>
+  </>
+);
+
 const fetchReviews = (id: string) => {
   const reviews = axios
     .get<Reviews>(`${environment.BACKEND_URL}/burgers/${id}/reviews`)
@@ -41,6 +81,7 @@ export default function Burger() {
   const burger = useLoaderData() as Burger;
 
   const [reviews, setReviews] = useState<Reviews | null>();
+  const [loggedIn, setLoggedIn] = useState(false);
 
   useEffect(() => {
     if (burger.id) {
@@ -79,6 +120,10 @@ export default function Burger() {
           <em>No reviews yet.</em>
         </p>
       )}
+
+      {!loggedIn && <button onClick={() => setLoggedIn(true)}>Log in</button>}
+      {loggedIn && <AddReview />}
+
       {reviews && (
         <ul>
           {reviews.reviews.map((review, index) => (

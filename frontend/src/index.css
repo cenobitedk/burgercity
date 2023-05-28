@@ -51,17 +51,21 @@ main {
 }
 
 button,
-input {
+input,
+textarea {
   border-radius: 8px;
   border: 1px solid transparent;
   border-color: #9b4646;
   padding: 0.6em 1.2em;
+  width: 100%;
+  box-sizing: border-box;
+
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   /* background-color: #1a1a1a; */
-  background-color: #f9f9f9;
 
+  background-color: #f9f9f9;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -141,4 +145,39 @@ ul {
 .review {
   padding-inline: 8px;
   background-color: lightgoldenrodyellow;
+}
+
+form {
+  border: thin solid lightgrey;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+form h4 {
+  margin-top: 0;
+}
+
+.add-review .ratings {
+  line-height: 2.5;
+}
+
+.add-review .input-values {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .add-review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 16px;
+
+    > * {
+      flex: auto;
+    }
+    .ratings {
+      margin-top: 1rem;
+    }
+  }
 }
