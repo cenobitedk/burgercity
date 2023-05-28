@@ -7,7 +7,7 @@ export default function RestaurantsOverview(props: { list: Restaurant[] }) {
       {props.list.map((restaurant, i) => (
         <li key={i}>
           <Link to={`/restaurants/${restaurant.id}`}>
-            <div className="restaurant">
+            <div className="item-wrapper">
               <img
                 src={`/restaurants/${restaurant.id}.jpg`}
                 className="image"

@@ -102,15 +102,15 @@ ul {
   max-height: var(--height);
 }
 
-.restaurant {
+.item-wrapper {
   border: thin solid lightgrey;
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 1rem;
 }
 
-.restaurant h4,
-.restaurant p {
+.item-wrapper h4,
+.item-wrapper p {
   padding-inline: 12px;
   margin-block: 12px;
 }

@@ -2,8 +2,13 @@ import { Link, useLoaderData } from "react-router-dom";
 import { Burger } from "../types/definitions";
 
 const Burger = (props: { burger: Burger }) => (
-  <div>
-    <img src={`/burgers/${props.burger.id}.jpg`} />
+  <div className="item-wrapper">
+    <div
+      className="imgwrapper"
+      style={{ "--height": "40vw" } as React.CSSProperties}
+    >
+      <img src={`/burgers/${props.burger.id}.jpg`} />
+    </div>
     <h4>{props.burger.name}</h4>
     <p>{props.burger.description.slice(0, 128).concat("... read more")}</p>
   </div>
