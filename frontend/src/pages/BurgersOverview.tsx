@@ -17,14 +17,17 @@ export default function BurgersOverview() {
   const burgers = useLoaderData() as Burger[];
 
   return (
-    <ul>
-      {burgers.map((burger, index) => (
-        <li key={index}>
-          <Link to={`/burgers/${burger.id}`}>
-            <Burger burger={burger} />
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <>
+      <h3>Burgers</h3>
+      <ul>
+        {burgers.map((burger, index) => (
+          <li key={index}>
+            <Link to={`/burgers/${burger.id}`}>
+              <Burger burger={burger} />
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }

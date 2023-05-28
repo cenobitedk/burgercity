@@ -42,6 +42,10 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+header {
+  margin-bottom: 1rem;
+}
+
 main {
   text-align: left;
 }
