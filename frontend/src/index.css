@@ -88,6 +88,11 @@ img {
   object-fit: cover;
 }
 
+ul {
+  list-style: none;
+  padding-inline: 0;
+}
+
 .imgwrapper {
   display: flex;
 }
@@ -95,4 +100,24 @@ img {
 .imgwrapper[style] {
   max-width: var(--width);
   max-height: var(--height);
+}
+
+.restaurant {
+  border: thin solid lightgrey;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.restaurant h4,
+.restaurant p {
+  padding-inline: 12px;
+  margin-block: 12px;
+}
+
+.badge {
+  background-color: lightgrey;
+  color: dimgrey;
+  padding-inline: 5px;
+  border-radius: 8px;
 }
