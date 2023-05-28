@@ -8,7 +8,7 @@ function App() {
     <>
       <header>
         <Logo />
-        <Search />
+        {/* <Search /> */}
       </header>
       <main>
         <Outlet />
