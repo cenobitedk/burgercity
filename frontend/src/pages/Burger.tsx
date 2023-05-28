@@ -2,13 +2,39 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { environment } from "../environment";
-import { Burger, Reviews } from "../types/definitions";
+import { Burger, Review, Reviews } from "../types/definitions";
+
+import { Rating as StarRating } from "react-simple-star-rating";
 
 const fetchReviews = (id: string) => {
   const reviews = axios
-    .get<Reviews>(`${environment.BACKEND_URL}/burger/${id}/reviews`)
+    .get<Reviews>(`${environment.BACKEND_URL}/burgers/${id}/reviews`)
     .then((response) => response.data);
   return reviews;
+};
+
+const Review = (props: { review: Review }) => {
+  const { review } = props;
+  return (
+    <div>
+      <h4>{review.headline}</h4>
+      <p>
+        <small>{review.author.name}</small>
+      </p>
+      <p>{review.comment}</p>
+      <p>
+        Taste:
+        <StarRating size={20} readonly initialValue={review.rating.taste} />
+        <br />
+        Texture:
+        <StarRating size={20} readonly initialValue={review.rating.texture} />
+        <br />
+        Visual:
+        <StarRating size={20} readonly initialValue={review.rating.visual} />
+        <br />
+      </p>
+    </div>
+  );
 };
 
 export default function Burger() {
@@ -49,7 +75,9 @@ export default function Burger() {
       {reviews && (
         <ul>
           {reviews.reviews.map((review, index) => (
-            <li key={index}>{review.headline}</li>
+            <li key={index}>
+              <Review review={review} />
+            </li>
           ))}
         </ul>
       )}
