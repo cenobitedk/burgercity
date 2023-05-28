@@ -16,7 +16,7 @@ const fetchReviews = (id: string) => {
 const Review = (props: { review: Review }) => {
   const { review } = props;
   return (
-    <div>
+    <div className="review">
       <h4>{review.headline}</h4>
       <p>
         <small>{review.author.name}</small>
@@ -62,11 +62,17 @@ export default function Burger() {
     <div>
       {burger && (
         <>
-          <img src={`/burgers/${burger.id}.jpg`} />
+          <div
+            className="imgwrapper"
+            style={{ "--height": "90vw" } as React.CSSProperties}
+          >
+            <img src={`/burgers/${burger.id}.jpg`} />
+          </div>
           <h2>{burger.name}</h2>
           <p>{burger.description}</p>
         </>
       )}
+      <br />
       <h3>Reviews</h3>
       {reviews === null && (
         <p>

@@ -125,3 +125,8 @@ ul {
   padding-inline: 5px;
   border-radius: 8px;
 }
+
+.review {
+  padding-inline: 8px;
+  background-color: lightgoldenrodyellow;
+}
