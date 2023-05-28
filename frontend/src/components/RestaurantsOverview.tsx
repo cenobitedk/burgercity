@@ -16,10 +16,12 @@ export default function RestaurantsOverview(props: { list: Restaurant[] }) {
                 >
                   <img src={`/restaurants/${restaurant.id}.jpg`} />
                 </div>
-                <h4>{restaurant.name}</h4>
-                <p>
-                  <small className="badge">{restaurant.type}</small>
-                </p>
+                <div>
+                  <h4>{restaurant.name}</h4>
+                  <p>
+                    <small className="badge">{restaurant.type}</small>
+                  </p>
+                </div>
               </div>
             </Link>
           </li>

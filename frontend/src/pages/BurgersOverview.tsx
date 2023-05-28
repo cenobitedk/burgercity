@@ -9,8 +9,10 @@ const Burger = (props: { burger: Burger }) => (
     >
       <img src={`/burgers/${props.burger.id}.jpg`} />
     </div>
-    <h4>{props.burger.name}</h4>
-    <p>{props.burger.description.slice(0, 128).concat("... read more")}</p>
+    <div>
+      <h4>{props.burger.name}</h4>
+      <p>{props.burger.description.slice(0, 128).concat("... read more")}</p>
+    </div>
   </div>
 );
 export default function BurgersOverview() {

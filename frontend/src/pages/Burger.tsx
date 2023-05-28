@@ -64,7 +64,7 @@ export default function Burger() {
         <>
           <div
             className="imgwrapper"
-            style={{ "--height": "90vw" } as React.CSSProperties}
+            style={{ "--height": "min(90vw, 50vh)" } as React.CSSProperties}
           >
             <img src={`/burgers/${burger.id}.jpg`} />
           </div>
