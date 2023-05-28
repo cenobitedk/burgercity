@@ -9,7 +9,7 @@ export default function RestaurantsOverview(props: { list: Restaurant[] }) {
         {props.list.map((restaurant, i) => (
           <li key={i}>
             <Link to={`/restaurants/${restaurant.id}`}>
-              <div className="item-wrapper">
+              <div className="item-wrapper restaurant">
                 <div
                   className="imgwrapper"
                   style={{ "--height": "40vw" } as React.CSSProperties}
